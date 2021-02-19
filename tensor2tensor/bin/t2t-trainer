@@ -25,6 +25,7 @@ from tensor2tensor.bin import t2t_trainer
 import tensorflow.compat.v1 as tf
 
 def main(argv):
+  tf.disable_v2_behavior()
   t2t_trainer.main(argv)
 
 
